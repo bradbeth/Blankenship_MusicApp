@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">blankenship_musicapp</string>
+    <string name="country">Country</string>
+    <string name="genre">Genre</string>
+    <string name="rock_n_roll">Rock-n-Roll</string>
+    <string name="blues">Blues</string>
+    <string name="garth_brooks">Garth Brooks</string>
+    <string name="brad_paisley">Brad Paisley</string>
+    <string name="alan_jackson">Alan Jackson</string>
+    <string name="kenny_chesney">Kenny Chesney</string>
+    <string name="motley_crue">Motley Crue</string>
+    <string name="bob_seger">Bob Seger</string>
+    <string name="guns_n_roses">Guns-N-Roses</string>
+    <string name="metallica">Metallica</string>
+    <string name="robert_johnson">Robert Johnson</string>
+    <string name="muddy_waters">Muddy Waters</string>
+    <string name="bb_king">BB King</string>
+    <string name="johnny_lee_hooker">Johnny Lee Hooker</string>
+</resources>
