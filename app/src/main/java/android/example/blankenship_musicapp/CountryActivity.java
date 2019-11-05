@@ -15,23 +15,67 @@ public class CountryActivity extends AppCompatActivity {
         setContentView(R.layout.activity_country);
 
 
-                // Create a list of album
-                ArrayList<Album> album = new ArrayList<Album>();
-                album.add(new Album("Red"));
-                album.add(new Album("Blue"));
-                album.add(new Album("Green"));
+        // Find the View that shows the Garth Brooks artist
+        TextView garthBrooks = (TextView) findViewById(R.id.garthBrooks);
 
-                // Create an {@link WordAdapter}, whose data source is a list of {@link Word}s. The
-                // adapter knows how to create list items for each item in the list.
-                WordAdaptor adapter = new WordAdaptor(this, album);
+        // Set a click listener on that View
+        garthBrooks.setOnClickListener(new OnClickListener() {
+            // The code in this method will be executed when the Garth Brooks artist is clicked on.
+            @Override
+            public void onClick(View view) {
+                // Create a new intent to open the {@link garthBrooksActivity}
+                Intent garthBrooksIntent = new Intent(MainActivity.this, GarthBrooksActivity.class);
 
-                // Find the {@link ListView} object in the view hierarchy of the {@link Activity}.
-                // There should be a {@link ListView} with the view ID called list, which is declared in the
-                // word_list.xml layout file.
-                ListView listView = findViewById(R.id.list);
-
-                // Make the {@link ListView} use the {@link WordAdapter} we created above, so that the
-                // {@link ListView} will display list items for each {@link Word} in the list.
-                listView.setAdapter(adapter);
+                // Start the new activity
+                startActivity(garthBrooksIntent);
             }
-        }
+        });
+
+        // Find the View that shows the Brad Paisley artist
+        TextView bradPaisley = (TextView) findViewById(R.id.bradPaisley);
+
+        // Set a click listener on that View
+        bradPaisley.setOnClickListener(new OnClickListener() {
+            // The code in this method will be executed when the Brad Paisley artist is clicked on.
+            @Override
+            public void onClick(View view) {
+                // Create a new intent to open the {@link bradPaisleyActivity}
+                Intent bradPaisleyIntent = new Intent(MainActivity.this, BradPaisleyActivity.class);
+
+                // Start the new activity
+                startActivity(bradPaisleyIntent);
+            }
+        });
+
+        // Find the View that shows the Alan Jackson artist
+        TextView alanJackson = (TextView) findViewById(R.id.garthBrooks);
+
+        // Set a click listener on that View
+        alanJackson.setOnClickListener(new OnClickListener() {
+            // The code in this method will be executed when the Alan Jackson artist is clicked on.
+            @Override
+            public void onClick(View view) {
+                // Create a new intent to open the {@link alanJacksonActivity}
+                Intent alanJacksonIntent = new Intent(MainActivity.this, AlanJacksonActivity.class);
+
+                // Start the new activity
+                startActivity(alanJacksonIntent);
+            }
+        });
+
+        // Find the View that shows the Johnny Lee Hooker artist
+        TextView kennyChesney = (TextView) findViewById(R.id.kennyChesney);
+
+        // Set a click listener on that View
+        kennyChesney.setOnClickListener(new OnClickListener() {
+            // The code in this method will be executed when the Kenny Chesney artist is clicked on.
+            @Override
+            public void onClick(View view) {
+                // Create a new intent to open the {@link kennyChesneyActivity}
+                Intent kennyChesneyIntent = new Intent(MainActivity.this, KennyChesneyActivity.class);
+
+                // Start the new activity
+                startActivity(kennyChesneyIntent);
+            }
+        });
+    }
